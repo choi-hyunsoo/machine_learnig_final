@@ -1,6 +1,6 @@
 import torch
 from tqdm.notebook import tqdm, trange
-from utils import *
+from .utils import *
 import time
 
 def train(model, iterator, optimizer, criterion, device):
