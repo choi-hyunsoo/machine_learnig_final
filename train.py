@@ -57,7 +57,7 @@ def evaluate(model, iterator, criterion, device):
     return epoch_loss / len(iterator), epoch_acc / len(iterator)
 
 def train_all(model, train_iterator, valid_iterator,
-              optimizer, criterion, device, EPOCHS = 3):
+              optimizer, criterion, device, EPOCHS = 2):
   best_valid_loss = float('inf')
 
   for epoch in trange(EPOCHS, desc="Epochs"):
